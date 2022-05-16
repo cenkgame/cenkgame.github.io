@@ -1,0 +1,369 @@
+<!--Oyun içinde telif hakları bizde olmayan video, görsel, seslendirme ve müzik dosyaları bunulmaktadır. Oyun içi görsel, video ve oyun dosyalarının paylaşılması yasaktır.Ayriyeten oyunun dağıtılıp parayla satılması yasaktır. Bozüyük Borsa Anadolu Lisesi Tarih dersi için dersi aktifleştirmek ve daha eğlenceli hale getirmek için hazırlanmıştır.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenk</title>
+    <link rel="icon" type="image/x-icon" href="./resimler/logo2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js" integrity="sha512-RdSPYh1WA6BF0RhpisYJVYkOyTzK4HwofJ3Q7ivt/jkpW6Vc8AurL1R+4AUcvn9IwEKAPm/fk7qFZW3OuiUDeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+
+
+ 
+<iframe style="width: 0; height: 0;" allow="fullscreen"></iframe>
+  <img class="baslat" src="./resimler/baslat.png" style="position: absolute;" alt="" srcset="">
+  <video muted id="intro" style="object-fit: cover;height: 103%;">
+    <source src="./video/giris.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <video id="loading" style="margin-bottom: 3%;
+  height: 107%;">
+    <source src="./video/loading.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <video id="eren" class="disactive" style="object-fit: cover;height: 103%;">
+    <source src="./video/eren.mov" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <audio id="arkaplanmuzigi" loop>
+    <source src="./ses/arkaplan2.mp3" type="audio/mpeg">
+  </audio>
+  
+  <audio id="sesefekti">
+    <source src="" type="audio/mpeg">
+  </audio>
+  <img class="logobuyuk disactive" src="./resimler/logoo.png" width="600px" style="position: absolute;left:1%;top: -15%;">
+    <div class="hosgeldiniz disactive">
+          <button class="btnn">
+           OYNA
+          </button>
+          <button class="btnn">
+            NASIL OYNANIR?
+           </button>
+           <button class="btnn">
+            HAKKIMIZDA
+           </button>
+    
+    
+     </div>
+     <!-- <div class="secimekrani disactive">
+         
+
+            <button class="btnn rastgele">
+                Rastgele karşılaşma
+               </button>
+               YA DA
+               <button class="btnn ikikisi">
+                 Sınıftan 2 kişi seçin.
+                </button>
+
+         </div> -->
+      <div class="takimekrani disactive">
+        <img src="./resimler/back.png" class="back" onclick="openclose('close','.takimekrani');openclose('open','.hosgeldiniz');openclose('open','.logobuyuk')">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+          
+            <p class="text-light" style="font-size: 60px!important;
+            font-family: Army; margin-bottom:0!important;">AMBLEMINIZ</p>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img src="./resimler/logolar/1.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/2.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/3.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/4.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/5.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/6.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/7.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/8.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/9.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/10.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/12.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/13.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+              <img src="./resimler/logolar/14.png" class="swiper-slide logolar" width="300px" alt="" srcset="">
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination" style="--swiper-theme-color: #b3620e;"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" style="--swiper-theme-color: #ff8200;"></div>
+            <div class="swiper-button-next" style="--swiper-theme-color: #ff8200;"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="btn-group mb-3 takimadigiris">
+            <input type="color" id="renk" name="favcolor" value="#ff0000">
+            <select id="takimlar" name="takimlar">
+              <option value="Akıncılar" class="Akıncılar">Akıncılar</option>
+              <option value="Lağımcılar" class="Lağımcılar">Lağımcılar</option>
+              <option value="Yeni Çeriler" class="Yeni Çeriler">Yeni Çeriler</option>
+              <option value="Mezarcılar" class="Mezarcılar">Mezarcılar</option>
+            </select>
+            <button class="btn takimadisec" type="button" id="button-addon2">Seç</button>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="galip disactive">
+        <div class="ustkisim">
+          <img class="bugday bugdaysol" src="./resimler/bugday.png"/>
+          <p class="galiptakim">-</p>
+          <img class="bugday bugdaysag" src="./resimler/bugday.png"/>
+
+        </div>
+        <p class="galipgeldi">GALİP GELDİ</p>
+        <img src="./resimler/kupa.png" style="width: 375px;position: absolute;bottom: 67%;">
+        
+      </div>
+      <div class="tekraroyna disactive">TEKRAR OYNA</div>
+        
+        
+    </div>
+    <div class="tablolar disactive">
+
+        <h1 class="ml2">Lütfen çevire basın.</h1>
+        <!-- <div class="ogrenci_tablosu">
+
+  
+  
+        </div> -->
+        <div id="wheelOfFortune">
+          <canvas id="wheel" width="300" height="300"></canvas>
+          <div id="spin">Çevir</div>
+        </div>
+    </div>
+    <div class="oyun disactive">
+      <div class="birincitakim disactive">
+        <div class="takimisim"></div>
+        <img class="takimresim" onclick="toggle()"></img>
+        <div class="takimdurum takim1durum saldiriyor disactive">SALDIRIYOR</div>
+        <div class="sirabizde disactive">SIRA BIZDE</div>
+      </div>
+    
+      <div class="ikincitakim disactive">
+        <div class="takimisim"></div>
+        <img class="takimresim"></img>
+        <div class="takimdurum takim2durum disactive savunuyor">SAVUNUYOR</div>
+        <div class="sirabizde disactive">SIRA BIZDE</div>
+      </div>  
+      <div class="harita active">
+
+        <img src="./harita/marmara.png" class="haritaparcalari bolge1" height="850px">
+        <img src="./harita/ege.png" class="haritaparcalari bolge2" height="850px">
+        <img src="./harita/ic_anadolu.png" class="haritaparcalari bolge3" height="850px">
+        <img src="./harita/karadeniz.png" class="haritaparcalari bolge4" height="850px">
+        <img src="./harita/kktc.png" class="haritaparcalari bolge5" height="850px">
+        <img src="./harita/akdeniz.png" class="haritaparcalari bolge6" height="850px">
+        <img src="./harita/dogu.png" class="haritaparcalari bolge7" height="850px">
+        <img src="./harita/guney_dogu.png" class="haritaparcalari bolge8" height="850px">
+      </div>
+     
+      <div class="card sorukutu" style="width: 50%;height:500px;border: none;padding: 30px; border-radius: 20px;">
+
+        <div id="sayac"></div>
+        <div class="card-body" >
+          
+          <h5 class="card-title sorusayi text-white" style="margin-bottom: 20px;font-family: 'Inter';">Soru 1</h5>
+          <div class="card-text soruyazi text-light">Istanbul ne zaman feth edildi?</div>
+          <div class="position-absolute bottom-0 start-50 translate-middle-x" style="position: relative!important;width: 94%;padding: 20px;">
+            <div class="row">
+              <div class="col cevaplar" data-bs-toggle="modal" data-bs-target=".modal">1451</div>
+              <div class="col cevaplar" data-bs-toggle="modal" data-bs-target=".modal">1452</div>
+            </div>
+            <img src="./resimler/logo2.png" width="100px" style="position: absolute;align-self: center;justify-self: center; left: 46%;top: 43%;" alt="" srcset="">
+            <div class="row">
+
+              <div class="col cevaplar" data-bs-toggle="modal" data-bs-target=".modal">1453</div>
+             
+              <div class="col cevaplar" data-bs-toggle="modal" data-bs-target=".modal">1454</div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog ">
+          <img style="position: absolute;
+          left: -7%;
+          top: -41%;
+          z-index: 3;" src="./resimler/logoo.png" width="350px" style="filter:opacity(0.5) drop-shadow(0 0 0 red)">
+          <div class="modal-content bg-black" style="padding: 62px;
+          height: 475px;border-radius: 30px;">
+            
+            <div class="modal-body">
+              <p class="fs-4 text-light" style="text-align: center;
+              font-size: 65px!important;
+              font-family: 'Evogria';">Mutabık mıyız?</p>
+            </div>
+            <div class="modal-footer" style="border: none;justify-content: center!important">
+              <button type="button" class="btn btn-primary evet" style="width: 43%;height: 83px;background: #2a2a2a;font-family: Evogria;
+              border: 0;font-size: 37px;" data-bs-dismiss="modal">Evet</button>
+              <button type="button" class="btn btn-secondary hayir" style="font-family: Evogria;border: 0;width: 43%; height: 83px;font-size: 37px; background: #2a2a2a;margin-top: 30px;" data-bs-dismiss="modal">Hayır</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="padisahsozu disactive">
+
+        <img src="./resimler/semih.png" class="semih" height="100px">
+        <p class="fs-3 text-light soz">-</p>
+  
+      </div>
+    </div>
+
+    <div class="yanlis disactive">
+      <img class="kutulogo" src="./resimler/logokirmizi.png" width="400px" style="filter:opacity(0.5) drop-shadow(0 0 0 red)">
+      <p class="dyyazi">YANLIŞ YANIT VERDİNİZ!</p>
+      <div class="yenisoru">YENİ SORU</div>
+      <img src="./resimler/kirmizilogokucuk.png" width="150px" style="position: absolute;bottom: 5%;
+      right: 2%;">
+    </div>
+    <div class="dogru disactive">
+      <img class="kutulogo" src="./resimler/logoyesil.png" width="400px">
+      <p class="dyyazi">DOĞRU YANIT VERDİNİZ!</p>
+      <div class="yenisoru">YENİ SORU</div>
+      <img src="./resimler/yesillogokucuk.png" width="150px" style="position: absolute;bottom: 5%;
+      right: 2%;">
+    </div>
+    <div class="surebitti disactive">
+      <p class="dyyazi">SÜRE DOLDU!</p>
+      <div class="yenisoru">YENİ SORU</div>
+    </div>
+    
+   
+   
+
+    <div class="hakkimizda disactive">
+      <img src="./resimler/back.png" class="back" onclick="openclose('close','.hakkimizda');openclose('open','.hosgeldiniz');openclose('open','.logobuyuk')">
+      <div class="kutular">
+        <img src="./resimler/adilhoca.png" class="resimlerimiz">
+        <p class="isler">SESLENDİREN</p>
+        <p class="isimler">ADİL UĞUR</p>
+        <p class="isimler" style="top: 19%;font-size: 26px;">TARİH ÖĞRETMENİ</p>
+        
+      </div>
+      <div class="kutular" style="margin-bottom: 123px;">
+        <img src="./resimler/logo2.png" class="resimlerimiz">
+        <p style="font-family: Montserrat;padding: 1px;
+        text-align: center;color: #fff; font-size: 17px;margin-top: -14%;">Tarih sorularını çözerek haritayı feth etmeye çalıştığınız bir bilgi yarışması.</p>
+        
+        <img src="./resimler/insta.png" class="insta" style="width: 30px;margin-top: 30px;">
+      <p style="color: white;
+      font-family: Poppins;font-size: 21px;margin-top: 20px;">@kallawistudio</p>
+      <img src="./resimler/message.png" class="insta" style="width: 30px;margin-top: 30px;">
+      <p style="color: white;
+      font-family: Poppins;font-size: 19px;
+    margin-top: 7px;">kallawistudio0@gmail.com</p>
+    </img>
+    
+      </div>
+     
+      <div class="kutular">
+        <img src="./resimler/sefikahoca.jpeg" class="resimlerimiz">
+        <p class="isler">EDİTÖR</p>
+        <p class="isimler">ŞEFİKA YELER</p>
+        <p class="isimler" style="top: 19%;font-size: 26px;">TARİH ÖĞRETMENİ</p>
+    </img>
+      </div>
+      <div class="kutular">
+        <img src="./resimler/tahir.png" class="resimlerimiz">
+        <p class="isler">TASARLAYAN</p>
+        <p class="isimler">TAHİR ÖNER</p>
+        <img src="./resimler/insta.png" class="insta" style="width: 30px;">
+      <p style="color: white;
+      font-family: Poppins;font-size: 21px;margin-top: 11px;">@tahir0ner</p>
+    </img>
+        <img src="./resimler/tako.png" style="margin-top: -54px;" width="200px">
+      </div>
+      <div class="kutular" style="margin-top: 22px;">
+        <img src="./resimler/eren.png" class="resimlerimiz">
+        <p class="isler">GELİŞTİREN</p>
+        <p class="isimler">EREN UZ</p>
+        <img src="./resimler/insta.png" class="insta" style="width: 30px;">
+      <p style="color: white;
+      font-family: Poppins;font-size: 21px;margin-top: 11px;">@erenuz</p>
+    </img>
+        <img src="./resimler/erenlogo.png" width="200px">
+      </div>
+      <div class="kutular">
+        <img src="./resimler/semih2.jpeg" class="resimlerimiz">
+        <p class="isler">EDİTÖR</p>
+        <p class="isimler">SEMİH YILMAZ</p>
+        <img src="./resimler/insta.png" class="insta" style="width: 30px;">
+      <p style="color: white;
+      font-family: Poppins;font-size: 21px;margin-top: 11px;">@sssemih._</p>
+    </img>
+        <img src="./resimler/tekno.png" style="margin-top: -59px;
+        width: 111px;" width="200px">
+      </div>
+    </div>
+
+    <div class="nasiloynanir disactive">
+      <img src="./resimler/back.png" class="back geri" onclick="openclose('close','.nasiloynanir');openclose('open','.hosgeldiniz');openclose('open','.logobuyuk')">
+      <div class="anlatimkutu">
+        <h1 class="anlatimyazi">
+          Cenk, sorulan sorulara doğru cevap vererek haritadaki bölgeleri ele geçirmeye bağlı bir oyundur.Başlangıçta tüm harita boştur.Haritanın tüm kısımları dolana kadar boş bölgeler için takımlara sıra sıra sorular yöneltilir.Doğru bilen bölgeyi ele geçirir, bilemeyen ise sırasını karşı takıma vermiş olur.Tüm bölgeler ele geçirilip savaş turuna geçildiğinde ise öncelik için zar atılır.Zarda büyük sayıyı tutturan takım ilk önce başlar ve bu sefer sıra sıra saldırı-savunma tarzında rastgele bölgeler üzerine ilerler oyun.
+        </h1>
+        <img src="./resimler/asker.png" width="450px" class="anlatici">
+      </div>
+    </div>
+
+    <div class="dice disactive">
+
+      <p style="position: absolute;
+      margin: 0 auto;
+      padding: 30px;
+      top: 17%;
+      font-size: 73px;
+      text-align: center;
+      font-family: 'Evogria';
+      color: #fff;">
+        Kimin önce başlayacağını belirlemek için zar atmanız gerekiyor.
+      </p>
+
+      <div class="takim1serit"></div>
+
+      <img src="" class="dice1" width="270px">
+      </img>
+      <img src="" class="dice2" width="270px">
+      </img>
+
+      <div class="takim2serit"></div>
+      
+      <div class="btn dicebtn" style="bottom: 35%; width: 340px;height: 103px;font-family: 'Evogria';
+      font-size: 40px; position: absolute; background-color: #fff;bottom: 16%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;;">Zarı fırlat!</div>
+
+    </div>
+   
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="./game.js"></script>
+</body>
+</html>

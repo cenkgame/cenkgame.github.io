@@ -1,0 +1,701 @@
+/*Oyun içinde telif hakları bizde olmayan video, görsel, seslendirme ve müzik dosyaları bunulmaktadır. Oyun içi görsel, video ve oyun dosyalarının paylaşılması yasaktır.Ayriyeten oyunun dağıtılıp parayla satılması yasaktır. Bozüyük Borsa Anadolu Lisesi Tarih dersi için dersi aktifleştirmek ve daha eğlenceli hale getirmek için hazırlanmıştır.*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html,body{
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: Army;
+    src: url(./fontlar/Distress.ttf);
+  }
+@font-face {
+  font-family: takimdurum;
+  src: url("./fontlar/Akira\ Expanded\ Demo.otf");
+}
+@font-face {
+  font-family: Evogria;
+  src: url(./fontlar/Evogria.otf);
+}
+@font-face {
+  font-family: Mont;
+  src: url(./fontlar/Coco-Sharp-Regular-trial.ttf);
+}
+@font-face {
+  font-family: Bankgthd;
+  src: url(./fontlar/BankGthd.ttf);
+}
+@font-face {
+  font-family: Gogh;
+  src: url(./fontlar/Gogh-ExtraBold.otf);
+}
+
+body{
+    background-color: #0d0d0d;
+    background-image: url("./resimler/wp1864601.png");
+    background-size: cover;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.kutular{
+  background: rgb(247,47,11);
+background: linear-gradient(0deg, rgba(247,47,11,0.45) 0%, rgba(247,137,23,0.45) 100%);
+width: 336px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: -60px 20px 45px 3px;
+height: 412px;
+
+border-radius: 17px;
+}
+.resimlerimiz{
+  position: relative;
+  top:-13%;
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+    border-radius: 200px;
+
+}
+.text-animation {
+  display: none;
+  position: relative;
+  color: #f5f5f5;
+  font-size: 50px;
+  font-family: "Passion One", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.text-animation .letter {
+  display: inline-block;
+  opacity: 0;
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #f5f5f5;
+  z-index: 1;
+}
+.isimler,.isler{
+  color: #fff;
+  font-family:takimdurum;
+  
+}
+.anlatimkutu{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(13,13,13,0.4);
+  border-radius: 21px;
+  width: 57%;
+  height: 475px;
+}
+.anlatici{
+  position: relative;
+    left: 15%;
+}
+.anlatimyazi{
+  width: 100%;
+    position: absolute;
+    left: -2%;
+    padding: 500px;
+}
+.nasiloynanir{
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background:url("./resimler/4120703b7903228ca436239256ef6b21.png");
+  background-size: cover;
+}
+.isimler{
+  font-size: 29px;
+  font-family: Montserrat;
+  top: -7%;
+    position: relative;
+}
+.insta{
+  position: relative;
+  margin-top: -11px;
+}
+.isler{
+  top: -10%;
+  position: relative;
+  font-size: 29px;
+  font-family: Bankgthd;
+}
+.back{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 57px;
+    margin: 60px;
+}
+.hakkimizda{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 123%;
+  padding: 250px;
+  background-size: cover!important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url("./resimler/arka3.png");
+}
+.takimadigiris{
+  width:705px!important;
+  margin-bottom: 141px!important;
+  height: 100px;
+  
+}
+.swiper {
+  width: 500px;
+  height: 500px;
+}
+.isimgiris{
+
+  font-size: 30px;
+}
+.takimadisec{
+  color: #fff!important;
+  margin-left: 30px!important;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(0 0 0 / 62%);
+  width: 200px!important;
+    font-size: 33px;
+    border-radius: 15px!important;
+  
+}
+input[type="color"] {
+  border-radius: 30px!important;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  border-radius: 30px!important;
+}
+input[type="color"]::-webkit-color-swatch {
+	border-radius: 30px!important;
+}
+.tekraroyna{
+  position: absolute;
+    bottom: 20%;
+    align-items: center;
+    justify-content: center;
+  color: #fff!important;
+  margin-left: 30px!important;
+  font-family: 'Evogria', sans-serif;
+  background-color: #0000005c;
+  width: 425px!important;
+  height: 125px;
+  font-size: 39px;
+}
+.ogrenci_tablosu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 500px;
+  background-color: #000;
+}
+.takimekrani{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wheelOfFortune {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+#wheel {
+  display: block;
+}
+
+#spin {
+  font: 1em sans-serif;
+  font-family: Army;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -15%;
+  background: #fff;
+  color: #fff;
+  box-shadow: 0 0 0 8px currentColor, 0 0px 15px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  transition: 0.8s;
+}
+canvas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#spin::after {
+  content: "";
+  position: absolute;
+  top: -17px;
+  border: 10px solid transparent;
+  border-bottom-color: currentColor;
+  border-top: none;
+}
+.red_border{
+  border: 1px solid red!important;
+}
+.blue_border{
+  border: 1px solid blue!important;
+}
+.ogrenci{
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  background-color: #000;
+  color: white;
+  font-family: Inter;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ogrenci_tablosu{
+  align-self: flex-start;
+}
+.hosgeldiniz{
+    width: 40%;
+    height: 100%;
+    margin-top:150px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.secimekrani{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tablolar{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#sayac{
+  position: absolute;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+  justify-content: center;
+  color: white;
+  font-family: Inter;
+  width: 100px;
+  height: 100px;
+  background: url("./resimler/bomba.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  top: 9%;
+    right: -1%;
+}
+#takimlar{
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  width: 412px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background: rgb(0 0 0 / 62%);
+  
+  border-radius: 15px!important;
+}
+#renk{
+  height: 100px;
+  margin-right: 30px;
+  width: 117px;
+}
+.cevaplar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74%;
+  margin-left: 29px;
+  margin-right: 4px;
+  margin-top: 28px;
+  font-family: 'Poppins', sans-serif;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(255, 214, 143, 0.15)!important;
+  background-size: cover;
+
+  background-color: #0084ff;
+  color: white;
+}
+.cevaplar:hover{
+  background-color: #55adff;
+  cursor: pointer;
+}
+
+.ml2 {
+    padding: 20px;
+    font-weight: 900;
+    font-size: 2.5em;
+    font-family: Army;
+    color: #fff;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+
+.soru{
+  width: 500px;
+  height: 800px;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 18px 19px 55px -29px rgba(0,0,0,0.51);
+-moz-box-shadow: 18px 19px 55px -29px rgba(0,0,0,0.51);
+box-shadow: 18px 19px 55px -29px rgba(0,0,0,0.51);
+
+}
+  .active{
+      display: flex;
+  }
+  .disactive{
+      display: none!important;
+  }
+  .rastgele, .ikikisi{
+    width: 50%!important;
+
+  }
+  .oyun{
+    background: url("./resimler/659390.png");
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .harita{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+  }
+  .btnn {
+    width: 75%;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: none;
+    z-index: 2;
+    border:none;
+    margin-top: 40px;
+    transition: 0.2s ease-in-out;
+  }
+  .btnn{
+
+    font-family: Evogria;
+    color: white;
+    font-size: 27px;
+  }
+  .btnn:focus{
+      background-color: #0084ff;
+  }
+  @media screen and (max-width: 1920px) {
+    .dice1,.dice2{
+      font-family: Evogria;
+      margin:5%;
+      margin-top: 13%;
+    font-size: 200px;
+      color: #fff;
+    }
+    .dice{
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+    }
+    .anlatimyazi{
+      color: white;
+    font-size: 35px!important;
+    text-align: center;
+    }
+    .haritaparcalari{
+      position: absolute;object-fit: contain; top: -15%;
+      filter: opacity(0.8) drop-shadow(0 0 0 #fff);
+      left: 18%;
+      transition: 1s ease-out;
+    }
+    
+    .isimgiris::placeholder{
+      color: rgb(126, 126, 126);
+    }
+    .takimresim{
+      width: 150px;
+    }
+    .birincitakim,.ikincitakim{
+      font-size: 36px;
+      font-family: Evogria;
+      text-align: center;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+   
+    width: 395px;
+    height: 114px;
+    }
+    .saldiriyor{
+      background: rgba(255, 0, 0, 0.15);
+      color: red;
+    }
+    .savunuyor{
+      background: rgba(60, 255, 0, 0.15);
+      color: greenyellow;
+    }
+    .birincitakim{
+      left: 0;
+      top: 12%;
+    }
+    .ikincitakim{
+      right: 0;
+      top: 12%;
+    }
+    .takimdurum{
+      font-size: 22px;
+      width: 248px;
+      height: 67px;
+      font-family: takimdurum;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 155%;
+    }
+    .yenisoru{
+      background-color: #000;
+      color: white;
+      font-family: Evogria;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-size: 50px;
+      justify-content: center;
+      height: 100px;
+    }
+    .kutulogo{
+
+      position: absolute;
+      left: -5%;
+      top: -37%;
+    }
+    .dyyazi{
+      font-size: 75px;
+      color: white;
+      font-family: Evogria;
+      text-align: center;
+      margin-bottom: 4%!important;
+    }
+    
+    .dogru,.yanlis,.surebitti{
+      z-index: 1000;
+      border-radius: 30px;
+      border-bottom-right-radius: 117px;
+      position: absolute;
+      z-index: 5;
+      width: 73%;
+    height: 55%;
+      display: flex;
+      font-family: Inter;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .surebitti{
+      background-color: #E49B0F;
+    }
+    .dogru{
+      background-color: #247503;
+    }
+    .yanlis{
+      background-color: rgb(151, 18, 18);
+    }
+
+    .logolar{
+      padding: 110px;
+    }
+    
+    .logobuyuk{
+      top: -10%!important;
+      left: 1%!important;
+      width: 650px!important;
+    }
+    .btnn{
+      width: 81%;
+      height: 95px;
+      font-size: 39px;
+    }
+    .hosgeldiniz{
+      width: 48%;
+    }
+    .sorukutu{
+      margin-top: 23px;
+      background: transparent;
+      width: 55%!important;
+      height: 545px!important;
+    }
+    .soruyazi{
+      text-align: center;
+      background-color: rgba(255, 214, 143, 0.15)!important;
+      font-size: 30px!important;
+      font-family: Gogh;
+      padding: 35px;
+    }
+    .sorusayi{
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-size: 32px;
+    }
+    .cevaplar{
+      height: 70px;
+      font-size: 25px;
+    }
+    .modal-dialog {
+      max-width: 975px;
+      margin: 19.75rem auto;
+  }
+  .modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-footer{
+    flex-direction: column;
+  }
+  .padisahsozu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   background-color: rgba(255, 138, 0, 0.15)!important;
+    background-size: cover;
+    margin-bottom: 29px;
+    width: 51%;
+    height: 100px;
+    background-color: #000;
+  }
+  .soz{
+    text-align: center;
+    width: 73%;
+    font-family: Mont;
+    margin: 0;
+  }
+  .semih{
+    margin-left: 85px;
+  }
+  .sirabizde{
+    color: white;  
+    margin-top: 17px;
+  }
+  p{
+    margin-bottom: -0.2rem!important;
+  }
+  .ustkisim{
+    position: relative;
+    display: flex;
+    bottom: -28%;
+    flex-direction: row;
+  }
+  .bugday{
+    margin-top: -8%;
+    position: relative;
+
+    width: 350px;
+    height: 350px;
+    
+  }
+  .bugdaysol{
+    right: -4%;
+    margin-top: -19%;
+    transform: rotateY(180deg);
+  }
+  .galip{
+    background-image: url("./resimler/galip.png");
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #0d0d0d;
+
+  }
+  .bugdaysag{
+    left: -4%;
+    margin-top: -19%;
+  }
+  .galiptakim{
+    font-family: Evogria;
+    font-size: 200px;
+    margin-top: -23%;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  
+  }
+  .galipgeldi{
+    font-family: Evogria;
+    font-size: 135px;
+    margin-top: 5%;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  
+  }
+  .takim1serit,.takim2serit{
+    width: 40%;
+    height: 161px;
+  }
+  
+  }
+
+ 
